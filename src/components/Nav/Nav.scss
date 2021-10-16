@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+
+    :last-child {
+        margin-right: 0;
+    }
+}
