@@ -5,22 +5,26 @@ nav {
     position: fixed;
     bottom: 0;
     padding: 24px;
+    
 
-    :last-child {
-        margin-right: 0;
+    .navItem:last-child {
+        margin-left: 0;
+        margin-right: 54px;
     }
 }
 
 .navItem {
-    margin-right: 10px;    
+    display: flex;
+    justify-content: center;
+    margin-left: 54px;
+    width: 34px;
 }
 
 .homeIcon {
     height: 24px;
-    width: auto;
 }
 
 .myListIcon {
     height: 24px;
-    width: auto;
+    // width: auto;
 }
