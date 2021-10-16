@@ -1,5 +1,5 @@
 <template>
-  <main class="MyList">
+  <main class="myList">
     <h1>My List</h1>
     <ul ref="MyList">
       <MedicineListItem v-for="medicine in myMedicines" :medicine="medicine" :key="medicine.id" />
@@ -22,6 +22,6 @@ export default class MyList extends Vue{
 }
 </script>
 
-<style>
-
+<style scoped>
+@import '../styles/myList.scss';
 </style>

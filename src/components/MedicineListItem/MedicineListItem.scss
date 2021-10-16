@@ -1,14 +1,43 @@
 li.MedicineListItem{
   border-radius: 10px;
-  padding:5px;
+  padding:1em;
+  background-color: var(--secondary-color);
+  list-style-type: none;
+  display: grid;
+  width:100%;
+  grid-template-columns: 1fr  3em;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "name icon"
+    "content icon";
+  
 }
-li.MedicineListItem {
 
+li.MedicineListItem.displayInfo{
+  padding-bottom: 3px;
+  grid-template-areas: 
+    "name name"
+    "content content"
+    "moreInfo moreInfo"
+    "remove icon";
+}
+
+.moreMedInfo{
+  grid: moreInfo;
+}
+
+.removeFromList{
+  grid: remove;
 }
 
 li.MedicineListItem .prepAndAmount {
   margin:0;
   margin-top: 0.4em;
+  grid-area: content;
+}
+
+li.MedicineListItem h2.medicineName{
+  grid-area: name;
 }
 
 li.MedicineListItem .prepAndAmount span {
@@ -17,6 +46,12 @@ li.MedicineListItem .prepAndAmount span {
 
 li.MedicineListItem .prepAndAmount {
 
+}
+
+li.MedicineListItem .expandButton{
+  width:3em;
+  grid-area: icon;
+  align-self: center;
 }
 
 li.MedicineListItem article{
