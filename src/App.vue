@@ -16,5 +16,11 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-  // @import './styles/globalStyles.scss';
+  :root{
+    --primary-color: #191B1C!important;
+    --secondary-color: #232A31!important;
+    --non-doping-color: #2CB039!important;
+    --doping-color: #FF1717!important;
+    --search-and-link-color: #4999CC!important;
+  }
 </style>
