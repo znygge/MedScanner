@@ -2,12 +2,13 @@ nav {
     display: flex;
     position: fixed;
     bottom: 0;
-}
-
-.nav-item {
-    margin-right: 10px;
+    padding: 24px;
 
     :last-child {
         margin-right: 0;
     }
+}
+
+.navItem {
+    margin-right: 10px;    
 }
