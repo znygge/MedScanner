@@ -1,6 +1,6 @@
 <template>
   <nav id="nav">
-    <router-link class="navItem" to="/">Home</router-link>
+    <router-link class="navItem" to="/"><img class="cameraicon" src="../../assets/camera_icon.svg" alt="camera icon"></router-link>
     <router-link class="navItem" to="/about">About</router-link>
   </nav>
 </template>
