@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button v-on:click="buttonClicked">
     {{ msg }}
   </button>
 </template>
@@ -10,11 +10,13 @@ import { Options, Vue } from 'vue-class-component';
 
 @Options({
   props: {
-    msg: String
+    msg: String,
+    buttonClicked: Function
   }
 })
 export default class Button extends Vue {
-  msg!: string
+  private msg!: string
+  private buttonClicked!: (event:Event)=>void;
 }
 </script>
 

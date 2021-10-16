@@ -1,0 +1,28 @@
+li.MedicineListItem{
+  border-radius: 10px;
+  padding:5px;
+}
+li.MedicineListItem {
+
+}
+
+li.MedicineListItem .prepAndAmount {
+  margin:0;
+  margin-top: 0.4em;
+}
+
+li.MedicineListItem .prepAndAmount span {
+  display: block;
+}
+
+li.MedicineListItem .prepAndAmount {
+
+}
+
+li.MedicineListItem article{
+  display: none;
+}
+
+li.MedicineListItem.displayInfo article{
+  display: block;
+}
