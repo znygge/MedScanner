@@ -1,7 +1,11 @@
 <template>
   <nav id="nav">
-    <router-link class="navItem" to="/">Home</router-link>
-    <router-link class="navItem" to="/about">About</router-link>
+    <router-link class="navItem" to="/">
+        <img class="homeIcon" src="../../assets/home_active.svg" alt="home icon">
+    </router-link>
+    <router-link class="navItem" to="/search">
+        <img class="myListIcon" src="../../assets/my_list_inactive.svg" alt="my list icon">
+    </router-link>
   </nav>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <input type="text"> {{ msg }}
+  <input placeholder="msg" type="search" />
 </template>
 
 <script lang="ts">
@@ -11,7 +11,7 @@ import { Options, Vue } from 'vue-class-component';
   }
 })
 export default class Button extends Vue {
-  msg!: string
+  private msg!: string
 }
 </script>
 
