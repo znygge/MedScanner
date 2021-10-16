@@ -1,5 +1,5 @@
 <template>
-  <input placeholder="msg" type="search" />
+  <input class="input" placeholder="msg" type="search" />
 </template>
 
 <script lang="ts">
