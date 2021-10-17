@@ -1,0 +1,14 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    height: 100%;
+    position: relative;
+}
+
+.ButtonImageShutter {
+    all: unset;
+    position: absolute;
+    bottom: 44px;
+    align-self: center;
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <Input placeholder="Search" />
+    <Input placeholder="Search" :searched="search" />
     <MedicineListItem v-for="medicine in myMedicines" :medicine="medicine" :key="medicine.id" />
     <MedicineListItem v-for="medicine in myMedicines" :medicine="medicine" :key="medicine.id" />
   </div>
@@ -20,6 +20,11 @@ import MedicineListItem from '@/components/MedicineListItem/MedicineListItem.vue
 })
 export default class Search extends Vue {
   private myMedicines: Array<Medicine> = [new Medicine("Alvedon", "Paracetamol", "250mg")];
+  private search!: any;
+  mounted() {
+    this.search = this.$route.params.searchValue;
+    console.log(this.$route.params.searchValue);
+  }
 }
 </script>
 
