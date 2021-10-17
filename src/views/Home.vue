@@ -1,16 +1,18 @@
 <template>
   <div class="home">
-    <Button msg="Testar"/>
+    <CameraComponent />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import Button from '@/components/Button/Button.vue';
+import CameraComponent from '@/components/CameraComponent/CameraComponent.vue';
 
 @Options({
   components: {
-    Button
+    Button,
+    CameraComponent,
   },
 })
 export default class Home extends Vue {}
