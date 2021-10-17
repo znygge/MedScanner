@@ -5,9 +5,11 @@ export default class Medicine {
   public name: string;
   public prep: string;
   public amount: string;
-  constructor(name: string, prep: string, amount: string){
+  public moreInfo: string;
+  constructor(name: string, prep: string, amount: string, moreInfo?:string){
     this.name = name;
     this.prep = prep;
     this.amount = amount;
+    this.moreInfo = moreInfo || "";
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <button class="buttonImage"><img :src="img" /></button>
+  <button class="buttonImage" v-on:click="buttonClicked"><img :src="imgSrc" /></button>
 </template>
 
 <script lang="ts">
@@ -7,11 +7,16 @@ import {Options} from "vue-class-component";
 import Button from "./Button.vue";
 
 @Options({
-  img: String
+  props:{
+    imgSrc: String
+  }
 })
 
 export default class ButtonImage extends Button{
-  private img!: string;
+  private imgSrc!: string;
+  created(){
+    console.log(this.imgSrc);
+  }
 }
 </script>
 
