@@ -8,6 +8,7 @@
     <article class="moreMedInfo">
       {{medicine.moreInfo}}
     </article>
+    <ButtonImageAndText :class="'removeOrAddFromList ' + (inMyList?'remove':'')" :imgSrc='require("@/assets/plus_sign.svg")' :msg="inMyList?'Ta bort från min lista':'Lägg till i min lista'" />
     <ButtonExpanderImage class="expandButton" :toggleButtonClicked="onLiClickListner" />
   </li>
 </template>
@@ -15,18 +16,21 @@
 import { Vue, Options } from "vue-class-component";
 import Medicine from "./Medicine";
 import ButtonExpanderImage from "@/components/Button/ButtonExpanderImage.vue";
+import ButtonImageAndText from "@/components/Button/ButtonImageAndText.vue";
 
 @Options({
   components: {
-    ButtonExpanderImage
+    ButtonExpanderImage,
+    ButtonImageAndText,
   },
   props: {
-    InMyList: Boolean,
+    inMyList: Boolean,
     medicine: Medicine,
   }
 })
 export default class MedicineListItem extends Vue{
   private medicine!: Medicine;
+  private inMyList = true;
   private showInfo = false;
   mounted(){
     console.log("Hello");
@@ -38,6 +42,6 @@ export default class MedicineListItem extends Vue{
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
  @import "./MedicineListItem.scss"
 </style>

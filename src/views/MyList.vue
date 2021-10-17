@@ -17,8 +17,7 @@ import { Vue, Options } from "vue-class-component";
   }
 })
 export default class MyList extends Vue{
-  private myMedicines: Array<Medicine> = [new Medicine("Alvedon", "Paracetamol", "250mg")];
-
+  private myMedicines: Array<Medicine> = [new Medicine("Alvedon", "Paracetamol", "250mg", `Alvedon innehåller paracetamol som är smärtlindrande och febernedsättande. Alvedon används för behandling av tillfälliga feber- och smärttillstånd av lindrig art, t ex feber vid förkylning, huvudvärk, tandvärk, menstruationssmärtor, muskel- och ledvärk. Alvedon kan användas av personer med känslig mage eller magsår och personer med ökad blödningsbenägenhet.`)];
 }
 </script>
 
